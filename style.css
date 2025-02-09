@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    width: 50%;
+    max-height: 100vh;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 3rem;
+    box-shadow: rgba(240, 240, 240, 0.25) 0px 50px 100px -20px, rgb(245, 242, 242) 0px 30px 60px -30px, rgba(253, 254, 255, 0.918) 0px -2px 6px 0px inset;
+}
+
+.fullAppContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.container {
+    display: flex;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.toDoInput {
+    width: 50%;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
+.mainText {
+    color: greenyellow;
+    font-size: 3rem;
+}
+
+.toDoContainer {
+    width: 50%;
+    margin: 1rem auto;
+
+}
+
+.submitBtn {
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    font: bold;
+    margin-top: 2rem;
+    padding: 0.5rem 3rem;
+    border-radius: 0.7rem;
+
+    &:hover {
+        background-color: greenyellow;
+        border: 2px solid black;
+    }
+}
+
+.toDoInput::placeholder {
+    font: 1.25rem;
+    color: black;
+}
+
+.deleteBtnClass {
+    background-color: greenyellow;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 0.8rem;
+
+    &:hover {
+        border: 2px solid white;
+        color: white;
+
+    }
+}
+
+.newToDo {
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    box-shadow: rgb(252, 249, 249) 0px 19px 100px, rgba(224, 221, 221, 0.863) 0px 10px 12px;
+
+
+}
+
+.textParagraph {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editBtnClass {
+
+    background-color: greenyellow;
+    border-radius: 10px;
+    padding: 10px;
+
+    &:hover {
+        border: 2px solid white;
+        color: white;
+        transition: border-color 0.5s;
+        transition: color 0.5s;
+
+    }
+}
+
+.checkInputClass {
+    margin-right: 0.8rem;
+}
+
+.checkInputClass {
+    appearance: none;
+    width: 22px;
+    height: 22px;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 0.8rem;
+}
+
+.checkInputClass:checked {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.checkInputClass:checked::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0.8px;
+    width: 9px;
+    height: 9px;
+    border: 4px solid white;
+    border-radius: 100%;
+
+}
+
+.checkInputClass:hover {
+    border-color: black;
+}
